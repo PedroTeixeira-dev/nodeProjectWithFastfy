@@ -6,10 +6,10 @@ export const config: Knex.Config = {
 		filename: './db/app.db'
 	},
 	useNullAsDefault: true,
-    migrations: {
-        extension: 'ts',
-        directory: './db/migrations'
-    }
+	migrations: {
+		extension: 'ts',
+		directory: './db/migrations'
+	}
 };
 
 export const knex = setupKnex(config);
