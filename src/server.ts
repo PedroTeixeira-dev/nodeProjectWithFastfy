@@ -9,7 +9,7 @@ app.get('/hello', async () => {
 	const transaction = await knex('transactions').insert({
 		id: crypto.randomUUID(),
 		title: 'Transacao Teste',
-		amount: 1000, 
+		amount: 1000,
 	}).returning('*');
 
 	return transaction;
